@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RimworldTestingSuite
 {
-    [AttributeUsage(AttributeTargets.Method)]
+    [AttributeUsage(AttributeTargets.Method | AttributeTargets.Class | AttributeTargets.Field)]
     public class TestAttribute : Attribute
     {
         public string Name { get; private set; }
